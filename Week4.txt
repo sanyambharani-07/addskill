@@ -1,0 +1,23 @@
+1:https://leetcode.com/problems/number-of-1-bits/
+
+ int hammingWeight(uint32_t n) {
+        
+         int count = 0;
+    
+            while (n) {
+                n &= (n - 1);
+                count++;
+            }
+    
+        return count;
+ }
+
+2:https://leetcode.com/problems/find-the-difference/
+ char findTheDifference(string s, string t) {
+       
+        char res=0;
+        for(char c:s)res ^=c;
+        for(char c:t) res ^=c;
+        return res;
+    }
+ 3:
